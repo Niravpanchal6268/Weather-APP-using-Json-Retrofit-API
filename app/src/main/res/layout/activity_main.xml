@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwallper"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/temp_c_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:text="25"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:id="@+id/weather_change_image_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="65dp"
+            android:src="@drawable/cloudy_icon" />
+
+        <TextView
+            android:id="@+id/type_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weather_change_image_id"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="65dp"
+            android:text="type"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/location_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_c_id"
+            android:layout_marginStart="30dp"
+            android:text="Location"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/region_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location_id"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="region"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/country_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location_id"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/region_id"
+            android:text="country"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tz_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country_id"
+            android:layout_marginStart="30dp"
+            android:text="Time Zone:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/timezone_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/country_id"
+            android:layout_toRightOf="@+id/tz_text_id"
+            android:text="TZ"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/time_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tz_text_id"
+            android:layout_marginStart="30dp"
+            android:text="time"
+            android:textColor="@color/white" />
+
+</RelativeLayout>
